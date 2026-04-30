@@ -24,7 +24,7 @@
 				"condition":{
 					"type":"origins:temperature",
 					"comparison":">=",
-					"compare_to":0.8
+					"compare_to":0.6
 				}
 			},
 			{
