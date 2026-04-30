@@ -17,11 +17,6 @@
 				"comparison":">",
 				"compare_to":0,
 				"inverted":true
-			},
-			{
-				"type":"origins:in_block",
-				"block":"minecraft:flowing_water",
-				"inverted":true
 			}
 		]
 	},
