@@ -4,10 +4,10 @@
 	"onset_delay":1,
 	"damage":2,
 	"damage_easy":1,
-	"damage_source":{
+	"damage_condition": {
 		"name":"onFire",
-		"unblockable":true,
-		"bypasses_armor":true
+		"type": "origins:in_tag",
+		"tag": "minecraft:bypasses_armor"
 	},
 	"protection_enchantment":"minecraft:fire_protection",
 	"protection_effectiveness":1,
@@ -22,7 +22,7 @@
 						"condition":{
 							"type":"origins:temperature",
 							"comparison":">=",
-							"compare_to":2
+							"compare_to":0.9
 						}
 					},
 					{

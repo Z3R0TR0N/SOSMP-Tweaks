@@ -6,6 +6,28 @@
 		"value":-0.25
 	},
 	"condition":{
-		"type":"origins:daytime"
+		"type":"origins:and",
+		"conditions":[
+			{
+				"type":"origins:biome",
+				"condition":{
+					"type":"origins:temperature",
+					"comparison":">=",
+					"compare_to":0.8
+				}
+			},
+			{
+				"type":"origins:or",
+				"conditions":[
+					{
+						"type":"origins:exposed_to_sun"
+					},
+					{
+						"type":"origins:dimension",
+						"dimension":"minecraft:the_nether"
+					}
+				]
+			}
+		]
 	}
 }

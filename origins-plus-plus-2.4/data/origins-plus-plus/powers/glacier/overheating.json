@@ -1,19 +1,19 @@
 {
 	"type":"origins:stacking_status_effect",
 	"min_stacks":0,
-	"max_stacks":1,
+	"max_stacks":5,
 	"duration_per_stack":20,
 	"effects":[
 		{
 			"effect":"minecraft:slowness",
-			"amplifier":1,
+			"amplifier":0,
 			"show_particles":false,
-			"show_icon":false
+			"show_icon":true
 		},
 		{
 			"effect":"minecraft:weakness",
 			"show_particles":false,
-			"show_icon":false
+			"show_icon":true
 		}
 	],
 	"condition":{
@@ -24,7 +24,7 @@
 				"condition":{
 					"type":"origins:temperature",
 					"comparison":">=",
-					"compare_to":2
+					"compare_to":0.8
 				}
 			},
 			{
@@ -42,3 +42,4 @@
 		]
 	}
 }
+
