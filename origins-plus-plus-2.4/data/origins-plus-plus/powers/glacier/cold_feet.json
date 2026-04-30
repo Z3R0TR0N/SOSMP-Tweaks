@@ -14,8 +14,8 @@
 			{
 				"type":"origins:fluid_height",
 				"fluid":"minecraft:water",
-				"comparison":">",
-				"compare_to":0.4
+				"comparison":"==",
+				"compare_to":0
 			},
 			{
 
