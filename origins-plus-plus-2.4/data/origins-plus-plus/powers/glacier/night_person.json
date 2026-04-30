@@ -6,7 +6,21 @@
 		"value":2
 	},
 	"condition":{
-		"type":"origins:exposed_to_sun",
-		"inverted":true
-	}
-}
+		"type":"origins:or",
+		"conditions":[
+			{
+			"type":"origins:exposed_to_sun",
+			"inverted":true			
+			},
+			{
+			"type": "origins:biome",
+			"condition": {
+				"type": "origins:temperature",
+				"comparison": ">=",
+				"compare_to": 0.8,
+				"inverted":true
+				}	
+			}
+		]		
+	}	
+}	
