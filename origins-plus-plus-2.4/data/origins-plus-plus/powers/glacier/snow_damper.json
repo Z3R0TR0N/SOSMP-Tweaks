@@ -3,6 +3,6 @@
 	"interval":0.5,
 	"entity_action":{
 		"type":"origins:execute_command",
-		"command":"execute if block ~ ~-3 ~ #minecraft:snow run effect give @s minecraft:slow_falling 1 0 true"
+		"command":"execute if block ~ ~-4 ~ #minecraft:snow run effect give @s minecraft:slow_falling 1 0 true"
 	}
 }
