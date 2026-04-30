@@ -16,19 +16,28 @@
 			"show_icon":true
 		}
 	],
-	"condition": {
+	"condition":{
 		"type":"origins:and",
-		"conditions": [
+		"conditions":[
 			{
-			"type": "origins:biome",
-			"condition": {
-				"type": "origins:temperature",
-				"comparison": ">=",
-				"compare_to": 0.8
+				"type":"origins:biome",
+				"condition":{
+					"type":"origins:temperature",
+					"comparison":">=",
+					"compare_to":0.8
 				}
 			},
 			{
-			"type": "origins:daytime"
+				"type":"origins:or",
+				"conditions":[
+					{
+						"type":"origins:exposed_to_sun"
+					},
+					{
+						"type":"origins:dimension",
+						"dimension":"minecraft:the_nether"
+					}
+				]
 			}
 		]
 	}
