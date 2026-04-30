@@ -1,0 +1,20 @@
+{
+	"type":"origins:phasing",
+	"render_type":"blindness",
+	"view_distance":10,
+	"block_condition":{
+		"type":"origins:in_tag",
+		"tag":"origins-plus-plus:sand_blocks"
+	},
+	"phase_down_condition":{
+		"type":"origins:and",
+		"conditions":[
+			{
+				"type":"origins:sneaking"
+			},
+			{
+				"type":"origins:on_block"
+			}
+		]
+	}
+}

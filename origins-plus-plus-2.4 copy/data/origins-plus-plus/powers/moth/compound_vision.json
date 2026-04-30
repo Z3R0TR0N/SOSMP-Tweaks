@@ -1,0 +1,9 @@
+{
+   "type":"origins:toggle_night_vision",
+   "active_by_default":false,
+   "strength":1.0,
+   "key":{
+      "key":"key.saveToolbarActivator",
+      "continuous":false
+   }
+}

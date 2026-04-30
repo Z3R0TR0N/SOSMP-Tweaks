@@ -1,0 +1,12 @@
+{
+	"type":"origins:shader",
+	"shader":"minecraft:shaders/post/sobel.json",
+	"condition":{
+		"type":"origins:in_block",
+		"block_condition":{
+			"type":"origins:light_level",
+			"comparison":">=",
+			"compare_to":5
+		}
+	}
+}

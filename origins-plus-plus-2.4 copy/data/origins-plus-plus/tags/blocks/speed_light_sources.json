@@ -1,0 +1,10 @@
+{
+	"values":[
+		"minecraft:lantern",
+		"minecraft:glowstone",
+		"minecraft:redstone_lamp",
+		"minecraft:redstone_torch",
+		"minecraft:torch",
+		"minecraft:wall_torch"
+	]
+}

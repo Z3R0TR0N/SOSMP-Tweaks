@@ -1,0 +1,17 @@
+{
+  "values":[
+    "minecraft:blaze",
+    "minecraft:enderman",
+    "minecraft:ghast",
+    "minecraft:hoglin",
+    "minecraft:magma_cube",
+    "minecraft:piglin",
+    "minecraft:piglin_brute",
+    "minecraft:skeleton",
+    "minecraft:wither_skeleton",
+    "minecraft:zombified_piglin",
+    "minecraft:zoglin",
+
+    "#origins-plus-plus-modded-support:hostile_nether_mobs"
+  ]
+}

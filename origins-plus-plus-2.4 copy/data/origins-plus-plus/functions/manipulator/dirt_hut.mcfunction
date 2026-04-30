@@ -1,0 +1,9 @@
+fill ~2 ~ ~1 ~2 ~1 ~-1 minecraft:dirt replace #origins-plus-plus:replaceable
+fill ~2 ~ ~1 ~2 ~1 ~-1 minecraft:dirt replace #origins-plus-plus:replaceable
+fill ~1 ~ ~2 ~-1 ~1 ~2 minecraft:dirt replace #origins-plus-plus:replaceable
+fill ~1 ~ ~2 ~-1 ~1 ~2 minecraft:dirt replace #origins-plus-plus:replaceable
+fill ~1 ~ ~-2 ~-1 ~1 ~-2 minecraft:dirt replace #origins-plus-plus:replaceable
+fill ~1 ~ ~-2 ~-1 ~1 ~-2 minecraft:dirt replace #origins-plus-plus:replaceable
+fill ~-2 ~ ~1 ~-2 ~1 ~-1 minecraft:dirt replace #origins-plus-plus:replaceable
+fill ~-2 ~ ~1 ~-2 ~1 ~-1 minecraft:dirt replace #origins-plus-plus:replaceable
+fill ~1 ~2 ~1 ~-1 ~2 ~-1 minecraft:dirt replace #origins-plus-plus:replaceable
