@@ -9,12 +9,12 @@
 			"effect":"minecraft:slowness",
 			"amplifier":1,
 			"show_particles":false,
-			"show_icon":false
+			"show_icon":true
 		},
 		{
 			"effect":"minecraft:weakness",
 			"show_particles":false,
-			"show_icon":false
+			"show_icon":true
 		}
 	],
 	"condition":{
