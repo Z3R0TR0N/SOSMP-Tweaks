@@ -15,15 +15,10 @@
 				"type":"origins:fluid_height",
 				"fluid":"minecraft:water",
 				"comparison":">",
-				"compare_to":0,
-				"inverted":true
+				"compare_to":0.4
 			},
 			{
-			"block_condition":{
-				"type": "origins:block",
-				"tag": "minecraft:flowing_water",
-				"inverted":true
-				}
+
 			}
 		]
 	},
