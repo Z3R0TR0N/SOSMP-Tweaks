@@ -6,13 +6,13 @@
 	"effects":[
 		{
 			"effect":"minecraft:slowness",
-			"amplifier":1,
-			"show_particles":true,
+			"amplifier":0,
+			"show_particles":false,
 			"show_icon":true
 		},
 		{
 			"effect":"minecraft:weakness",
-			"show_particles":true,
+			"show_particles":false,
 			"show_icon":true
 		}
 	],
@@ -21,7 +21,7 @@
 		"condition": {
 			"type": "origins:temperature",
 			"comparison": ">=",
-			"compare_to": 0.6
+			"compare_to": 0.8
 		}
 	}
 }

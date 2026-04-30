@@ -6,7 +6,7 @@
 		"value":2
 	},
 	"condition":{
-		"type":"origins:daytime",
+		"type":"origins:exposed_to_sun",
 		"inverted":true
 	}
 }
