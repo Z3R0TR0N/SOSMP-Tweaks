@@ -5,7 +5,7 @@
 		"command":"fill ~-2 ~-1 ~-2 ~2 ~-1 ~2 minecraft:frosted_ice replace minecraft:water"
 	},
 	"condition":{
-		"type":"origins:and",
+		"type":"origins:or",
 		"conditions":[
 			{
 				"type":"origins:sneaking",
@@ -14,9 +14,15 @@
 			{
 				"type":"origins:fluid_height",
 				"fluid":"minecraft:water",
-				"comparison":">",
-				"compare_to":0,
+				"comparison":"==",
+				"compare_to":0
+			},
+			{
+			"block_condition":{
+				"type": "origins:block",
+				"tag": "minecraft:flowing_water",
 				"inverted":true
+				}
 			}
 		]
 	},

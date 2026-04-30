@@ -1,8 +1,8 @@
 {
 	"type":"origins:action_over_time",
-	"interval":0.8,
+	"interval":0.5,
 	"entity_action":{
 		"type":"origins:execute_command",
-		"command":"execute if block ~ ~-1 ~ #minecraft:snow run effect give @s minecraft:slow_falling 1"
+		"command":"execute if block ~ ~-2 ~ #minecraft:snow run effect give @s minecraft:slow_falling 1"
 	}
 }

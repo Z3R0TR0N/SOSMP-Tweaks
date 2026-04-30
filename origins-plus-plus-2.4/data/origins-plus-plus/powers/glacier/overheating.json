@@ -3,39 +3,25 @@
 	"min_stacks":0,
 	"max_stacks":5,
 	"duration_per_stack":20,
-	"tick_rate":20,
 	"effects":[
 		{
 			"effect":"minecraft:slowness",
 			"amplifier":1,
-			"show_particles":false,
+			"show_particles":true,
 			"show_icon":true
 		},
 		{
 			"effect":"minecraft:weakness",
-			"show_particles":false,
+			"show_particles":true,
 			"show_icon":true
 		}
 	],
-	"condition":{
-		"type":"origins:or",
-		"conditions":[
-			{
-				"type":"origins:biome",
-				"condition":{
-					"type":"origins:temperature",
-					"comparison":">=",
-					"compare_to":0.5
-				}
-			},
-			{
-				"conditions":[
-					{
-						"type":"origins:dimension",
-						"dimension":"minecraft:the_nether"
-					}
-				]
-			}
-		]
+	"condition": {
+		"type": "origins:biome",
+		"condition": {
+			"type": "origins:temperature",
+			"comparison": ">=",
+			"compare_to": 0.6
+		}
 	}
 }

@@ -3,12 +3,11 @@
 	"min_stacks":0,
 	"max_stacks":10,
 	"duration_per_stack":60,
-	"tick_rate":20,
 	"effect":{
 		"effect":"minecraft:speed",
 		"amplifier":2,
 		"show_particles":false,
-		"show_icon":false
+		"show_icon":true
 	},
 	"condition":{
 		"type":"origins:or",
