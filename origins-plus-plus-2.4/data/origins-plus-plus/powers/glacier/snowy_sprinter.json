@@ -1,8 +1,9 @@
 {
 	"type":"origins:stacking_status_effect",
 	"min_stacks":0,
-	"max_stacks":10,
+	"max_stacks":1,
 	"duration_per_stack":60,
+	"tick_rate":1,
 	"effect":{
 		"effect":"minecraft:speed",
 		"amplifier":2,
