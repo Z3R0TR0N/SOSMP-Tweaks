@@ -6,34 +6,31 @@
 		"key":"key.origins.secondary_active"
 	},
 	"cold_feet":{
-		"type":"origins:active_self",
+		"type":"origins:action_over_time",
 		"entity_action":{
-			"type":"origins:action_over_time",
-			"entity_action":{
-				"type":"origins:execute_command",
-				"command":"fill ~-2 ~-1 ~-2 ~2 ~-1 ~2 minecraft:frosted_ice replace minecraft:water[level=0]"
-			},
-			"condition":{
-				"type":"origins:and",
-				"conditions":[
-					{
-						"type":"origins:sneaking",
-						"inverted":true
-					},
-					{
-						"type":"origins:fluid_height",
-						"fluid":"minecraft:water",
-						"comparison":">",
-						"compare_to":0,
-						"inverted":true
-					},
-					{
-						"type":"origins:power_active",
-						"power":"*:*_toggle"
-					}
-				]
-			},
-			"interval":1
-		}	
+			"type":"origins:execute_command",
+			"command":"fill ~-2 ~-1 ~-2 ~2 ~-1 ~2 minecraft:frosted_ice replace minecraft:water[level=0]"
+		},
+		"condition":{
+			"type":"origins:and",
+			"conditions":[
+				{
+					"type":"origins:sneaking",
+					"inverted":true
+				},
+				{
+					"type":"origins:fluid_height",
+					"fluid":"minecraft:water",
+					"comparison":">",
+					"compare_to":0,
+					"inverted":true
+				},
+				{
+					"type":"origins:power_active",
+					"power":"*:*_toggle"
+				}
+			]
+		},
+		"interval":1	
 	}
 }
