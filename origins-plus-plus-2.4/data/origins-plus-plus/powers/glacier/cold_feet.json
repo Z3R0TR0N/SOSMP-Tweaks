@@ -20,7 +20,7 @@
 			}
 		]
 	},
-	"interval":10,
+	"interval":3,
 	"key": {
 		"key": "key.origins.secondary_active"
 	}
