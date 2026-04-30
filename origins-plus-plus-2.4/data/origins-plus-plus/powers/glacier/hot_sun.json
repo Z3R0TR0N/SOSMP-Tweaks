@@ -6,6 +6,15 @@
 		"value":-0.25
 	},
 	"condition":{
-		"type":"origins:exposed_to_sun"
+		"type":"origins:or",
+		"conditions":[
+			{
+				"type":"origins:exposed_to_sun"
+			},
+			{
+				"type":"origins:dimension",
+				"dimension":"minecraft:the_nether"
+			}
+		]
 	}
 }
