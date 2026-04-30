@@ -4,5 +4,14 @@
 		"attribute":"minecraft:generic.armor",
 		"operation":"addition",
 		"value":2
+	},
+	"condition":{
+	"type": "origins:biome",
+	"condition": {
+		"type": "origins:temperature",
+		"comparison": ">=",
+		"compare_to": 0.6,
+		"inverted":true
+		}	
 	}
 }
