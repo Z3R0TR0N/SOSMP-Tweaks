@@ -1,8 +1,9 @@
 {
 	"type":"origins:stacking_status_effect",
 	"min_stacks":0,
-	"max_stacks":1,
+	"max_stacks":5,
 	"duration_per_stack":20,
+	"tick_rate":20,
 	"effects":[
 		{
 			"effect":"minecraft:slowness",
@@ -24,7 +25,7 @@
 				"condition":{
 					"type":"origins:temperature",
 					"comparison":">=",
-					"compare_to":0.8
+					"compare_to":0.5
 				}
 			},
 			{
