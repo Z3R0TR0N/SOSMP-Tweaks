@@ -6,7 +6,7 @@
 		"value":2
 	},
 	"condition":{
-		"type":"origins:or",
+		"type":"origins:and",
 		"conditions":[
 			{
 			"type":"origins:exposed_to_sun",
