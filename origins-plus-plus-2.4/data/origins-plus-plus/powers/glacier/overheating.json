@@ -17,18 +17,17 @@
 		}
 	],
 	"condition":{
-		"type":"origins:and",
+		"type":"origins:or",
 		"conditions":[
 			{
 				"type":"origins:biome",
 				"condition":{
 					"type":"origins:temperature",
 					"comparison":">=",
-					"compare_to":0.6
+					"compare_to":0.8
 				}
 			},
 			{
-				"type":"origins:or",
 				"conditions":[
 					{
 						"type":"origins:dimension",
