@@ -12,6 +12,20 @@
 	"sound":"minecraft:entity.snowball.throw",
 	"key":"key.use",
 	"condition":{
-		"type":"origins:sneaking"
-	}
+		"type":"origins:and",
+		"conditions":[
+			{
+				"type":"origins:sneaking"
+			},
+			{
+			"type": "origins:biome",
+			"condition": {
+				"type": "origins:temperature",
+				"comparison": ">=",
+				"compare_to": 0.6,
+				"inverted":true
+				}	
+			}
+		]		
+	}		
 }
