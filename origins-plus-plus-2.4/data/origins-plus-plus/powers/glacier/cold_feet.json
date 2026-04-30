@@ -2,7 +2,7 @@
 	"type":"origins:action_over_time",
 	"entity_action":{
 		"type":"origins:execute_command",
-		"command":"fill ~-2 ~-1 ~-2 ~2 ~-1 ~2 minecraft:frosted_ice replace minecraft:water{level:0}"
+		"command":"fill ~-2 ~-1 ~-2 ~2 ~-1 ~2 minecraft:frosted_ice replace minecraft:water[level=0]"
 	},
 	"condition":{
 		"type":"origins:and",
