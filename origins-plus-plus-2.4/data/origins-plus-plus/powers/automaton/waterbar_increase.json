@@ -43,8 +43,11 @@
 					}
 				}
 			]
-		}
-	},
+		},
+		"cooldown":40,
+		"key":{
+			"key":"key.use"
+		},		
 		"condition":{
 			"type":"origins:and",
 			"conditions":[
@@ -60,7 +63,8 @@
 					"type":"origins:sneaking"
 				}
 			]
-		},
+		}
+	},	
 	"water_bucket":{
 		"type":"origins:active_self",
 		"entity_action":{
@@ -79,7 +83,11 @@
 					}
 				}
 			]
-		},
+		},	
+		"cooldown":40,
+		"key":{
+			"key":"key.use"
+		},	
 		"condition":{
 			"type":"origins:and",
 			"conditions":[
@@ -98,7 +106,5 @@
 				}
 			]
 		}
-	},
-	"cooldown":40,
-	"key":"key.use"
+	}
 }
