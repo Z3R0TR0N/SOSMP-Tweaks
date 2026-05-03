@@ -28,7 +28,7 @@
 			]
 		},
 		"key":"key.origins.secondary_active",
-		"cooldown":100
+		"cooldown":50
 	},
 	"spectre":{
 		"type":"origins:active_self",
@@ -54,7 +54,7 @@
 			]
 		},
 		"key":"key.origins.secondary_active",
-		"cooldown":100
+		"cooldown":50
 	},
 	"sound":{
 		"type":"origins:active_self",
@@ -80,6 +80,6 @@
 			]
 		},
 		"key":"key.origins.secondary_active",
-		"cooldown":100
+		"cooldown":50
 	}
 }

@@ -1,0 +1,9 @@
+{
+    "name": "Deep Dark Inhabitant",
+    "description": "You spawn in the closest Ancient City to [0,0].",
+    "type": "origins:modify_player_spawn",
+    "dimension": "minecraft:overworld",
+    "structure": "minecraft:ancient_city",
+    "spawn_strategy": "default",
+    "dimension_distance_multiplier": 1
+}

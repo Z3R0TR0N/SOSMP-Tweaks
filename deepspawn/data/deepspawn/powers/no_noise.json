@@ -1,0 +1,9 @@
+{
+    "name": "Quiet",
+    "description": "Noises you make can't be detected by sculk sensors or wardens.",
+    "type": "origins:multiple",
+    "key0": {
+        "type": "origins:prevent_game_event",
+        "tag": "minecraft:vibrations"
+    }
+}

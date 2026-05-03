@@ -1,0 +1,65 @@
+{
+    "name": "Colonize",
+    "description": "You can cause any sculk catalyst you're standing on to spread sculk at the cost of experience.",
+    "badges": [
+        {
+            "type": "origins:tooltip",
+            "text": "You'll need a seed block of sculk or sculk veins to start the process.",
+            "sprite": "origins:textures/gui/badge/info.png"
+        },
+        {
+            "type": "origins:keybind",
+			"text": "Use %S while standing on (not inside of) a sculk catalyst.",
+            "sprite": "origins:textures/gui/badge/active.png"
+        }
+    ],
+    "condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+                "type": "origins:on_block",
+                "block_condition": {
+                    "type": "origins:block",
+                    "block": "minecraft:sculk_catalyst"
+                }
+            },
+            {
+                "type": "origins:xp_levels",
+                "comparison": ">=",
+                "compare_to": 1
+            }
+        ]
+    },
+    "type": "origins:active_self",
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:execute_command",
+                "command": "xp add @s -5 points"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "summon silverfish ~ ~-1 ~ {Silent:1,DeathTime:20,NoAI:1,Tags:[\"colonize\"],ActiveEffects:[{Id:14,Amplifier:1,Duration:200,ShowParticles:0}]}"
+            },
+            {
+                    "type": "origins:execute_command",
+                    "command": "kill @e[tag=colonize]"
+            },
+            {
+                "type": "origins:play_sound",
+                "sound": "minecraft:block.sculk.step",
+                "volume": 0.2,
+                "pitch": 1
+            }
+        ]
+    },
+    "cooldown": 2,
+    "hud_render": {
+        "should_render": false
+    },
+    "key": {
+        "key": "key.origins.secondary_active",
+        "continuous": true
+    }
+}

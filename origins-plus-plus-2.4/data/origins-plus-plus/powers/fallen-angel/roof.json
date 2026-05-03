@@ -1,10 +1,4 @@
 {
-	"condition":{
-		"type":"origins:block_collision",
-		"offset_x":0,
-		"offset_y":1,
-		"offset_z":0
-	},
 	"type":"origins:stacking_status_effect",
 	"min_stacks":0,
 	"max_stacks":1,
@@ -13,5 +7,9 @@
 		"effect":"minecraft:slowness",
 		"show_particles":false,
 		"show_icon":false
+	},
+		"condition":{
+		"type":"origins:exposed_to_sky",
+		"inverted":true
 	}
 }

@@ -4,5 +4,10 @@
 		"type":"origins:execute_command",
 		"command":"function origins-plus-plus:chimaera/phase_shift"
 	},
-	"cooldown":1200
+	"cooldown":1200,
+	"damage_condition" : {
+		"type":"origins:amount",
+		"comparison":">=",
+		"compare_to": 4
+	}
 }

@@ -1,0 +1,25 @@
+{
+    "name": "Deepspawn",
+    "description": "Whether you died and were revived by the sculk or are merely a construct of its will, you are innately attuned to the Deep Dark.",
+    "powers": [
+        "deepspawn:phase_particles",
+        "deepspawn:sculk_phase",
+        "deepspawn:fire_immunity",
+        "deepspawn:wall_hax",
+        "deepspawn:shrieker_charge",
+        "deepspawn:no_noise",
+        "deepspawn:catalyst_create",
+	    "deepspawn:sculk_spread",
+        "deepspawn:sculk_spawn",
+        "deepspawn:xp_hunger",
+        "deepspawn:catalyst_regen",
+        "deepspawn:sun_weakness",
+		"deepspawn:no_warden",
+        "deepspawn:sculk_vein_climb"
+    ],
+    "icon": {
+        "item": "minecraft:sculk_catalyst"
+    },
+    "order": 4,
+    "impact": 3
+}

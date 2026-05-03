@@ -116,11 +116,11 @@
 			},
 			"if_action":{
 				"type":"origins:execute_command",
-				"command":"effect give @e[distance=1..32] minecraft:glowing 1 1 true"
+				"command":"effect give @e[distance=1..32] minecraft:glowing 3 1 true"
 			},
 			"else_action":{
 				"type":"origins:execute_command",
-				"command":"effect give @e[distance=1..20] minecraft:glowing 1 1 true"
+				"command":"effect give @e[distance=1..20] minecraft:glowing 3 1 true"
 			}
 		},
 		"interval":20,

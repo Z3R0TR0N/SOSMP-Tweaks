@@ -1,0 +1,13 @@
+{
+    "pack": {
+        "name": "Deepspawn Origin",
+        "id": "deepspawn",
+        "pack_format": 15,
+        "version": "1.0.0",
+        "authors": [
+            "Alwaysalty"
+        ],
+        "description": "An origins datapack that adds the Deepspawn, a sculk-themed origin that thrives on trapping, planning, and fighting on their home turf.",
+        "license": "MIT"
+    }
+}

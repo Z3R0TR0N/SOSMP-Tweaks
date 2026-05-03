@@ -1,0 +1,44 @@
+{
+    "name": "Reincorporate",
+    "description": "You get Resistance I and regenerate health when within 8 blocks of a sculk catalyst. Outside of potions, this is your only way to regenerate HP.",
+    "type": "origins:multiple",
+    "catalystregen": {
+        "condition": {
+            "type": "origins:block_in_radius",
+            "block_condition": {
+                "type": "origins:block",
+                "block": "minecraft:sculk_catalyst"
+            },
+            "radius": 8,
+            "shape": "sphere",
+            "comparison": ">=",
+            "compare_to": 1
+        },
+        "type": "origins:stacking_status_effect",
+        "min_stacks": 0,
+        "max_stacks": 1,
+        "duration_per_stack": 30,
+        "tick_rate": 20,
+        "effect": {
+            "effect": "minecraft:regeneration",
+            "duration": 100,
+            "amplifier": 1,
+            "is_ambient": true,
+            "show_particles": false,
+            "show_icon": true
+        },
+        "effects": [
+            {
+                "effect": "minecraft:resistance",
+                "duration": 100,
+                "amplifier": 0,
+                "is_ambient": true,
+                "show_particles": false,
+                "show_icon": true
+            }
+        ]
+    },
+    "disableregen": {
+        "type": "origins:disable_regen"
+    }
+}

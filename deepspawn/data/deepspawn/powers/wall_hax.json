@@ -1,0 +1,91 @@
+{
+    "name": "Attuned Hearing",
+    "description": "While crouched, you can see entities within 12 blocks of you through walls. While standing on or inside of sculk, this range is doubled to 24 blocks. Players sneaking, on wool, or on carpets cannot be tracked.",
+    "type": "origins:multiple",
+    "outofsculkvision": {
+        "condition": {
+            "type": "origins:sneaking"
+        },
+        "type": "origins:entity_glow",
+        "entity_condition": {
+            "inverted": true,
+            "type": "origins:or",
+            "conditions": [
+                {
+                    "type": "origins:on_block",
+                    "block_condition": {
+                        "type": "origins:in_tag",
+                        "tag": "minecraft:dampens_vibrations"
+                    }
+                },
+                {
+                    "type": "origins:sneaking"
+                }
+            ]
+        },
+        "bientity_condition": {
+            "type": "origins:distance",
+            "comparison": "<=",
+            "compare_to": 12
+        },
+        "use_teams": false,
+        "red": 0.85,
+        "green": 0.95,
+        "blue": 1
+    },
+    "insculkvision": {
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:sneaking"
+                },
+                {
+                    "type": "origins:or",
+                    "conditions": [
+                        {
+                            "type": "origins:in_block",
+                            "block_condition": {
+                                "type": "origins:in_tag",
+                                "tag": "deepspawn:sculk_phasable"
+                            }
+                        },
+                        {
+                            "type": "origins:on_block",
+                            "block_condition": {
+                                "type": "origins:in_tag",
+                                "tag": "deepspawn:sculk_phasable"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "type": "origins:entity_glow",
+        "entity_condition": {
+            "inverted": true,
+            "type": "origins:or",
+            "conditions": [
+                {
+                    "type": "origins:on_block",
+                    "block_condition": {
+                        "type": "origins:in_tag",
+                        "tag": "minecraft:dampens_vibrations"
+                    }
+                },
+                {
+                    "type": "origins:sneaking"
+                }
+            ]
+        },
+        "bientity_condition": {
+            "type": "origins:distance",
+            "comparison": "<=",
+            "compare_to": 24
+        },
+        "use_teams": false,
+        "red": 0.2,
+        "green": 0.55,
+        "blue": 0.6
+    }
+}

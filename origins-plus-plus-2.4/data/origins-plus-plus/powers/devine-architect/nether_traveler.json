@@ -12,13 +12,39 @@
 			"type":"origins:dimension",
 			"dimension":"minecraft:overworld"
 		},
-		"if_action":{
-			"type":"origins:execute_command",
-			"command":"execute in minecraft:the_nether run tp @s ~ ~ ~"
-		},
-		"else_action":{
-			"type":"origins:execute_command",
-			"command":"execute in minecraft:overworld run tp @s ~ ~ ~"
-		}
+		  "if_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type": "origins:execute_command",
+          "command": "execute in minecraft:the_nether run tp @s ~ ~ ~"
+        },
+        {
+          "type": "origins:delay",
+          "ticks":10,
+          "entity_action": {
+            "type": "origins:execute_command",
+            "command": "summon experience_orb ~ ~ ~"
+          }
+        }
+      ]
+    },
+		"else_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type": "origins:execute_command",
+          "command": "execute in minecraft:overworld run tp @s ~ ~ ~"
+        },
+        {
+          "type": "origins:delay",
+          "ticks":10,
+          "entity_action": {
+            "type": "origins:execute_command",
+            "command": "summon experience_orb ~ ~ ~"
+          }
+        }
+      ]
+    }
 	}
 }
