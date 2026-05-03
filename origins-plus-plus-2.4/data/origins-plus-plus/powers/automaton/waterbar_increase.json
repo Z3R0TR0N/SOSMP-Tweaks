@@ -35,13 +35,33 @@
 			"type":"origins:and",
 			"conditions":[
 				{
-					"type":"origins:equipped_item",
-					"equipment_slot":"mainhand",
-					"item_condition":{
-						"type":"origins:ingredient",
-						"ingredient":{
-							"item":"minecraft:water_bucket"
-						}
+					"condition": {
+						"type":"origins:or",
+						"conditions":[
+							{
+								"type":"origins:equipped_item",
+								"equipment_slot":"mainhand",
+								"item_condition":{
+									"type":"origins:ingredient",
+									"ingredient":{
+										"item":"minecraft:water_bucket"
+									}
+								}
+							},
+							{
+								"type":"origins:equipped_item",
+								"equipment_slot":"mainhand",
+								"item_condition":{
+									"type":"origins:ingredient",
+									"ingredient":{
+										"item_condition":{
+											"type":"origins:nbt",
+											"nbt":"{Potion:\"minecraft:water\"}"
+										}
+									}
+								}
+							}
+						]
 					}
 				},
 				{
