@@ -1,0 +1,66 @@
+{
+    "name": "Meld",
+    "description": "You can phase into sculk-family blocks and climb sculk veins. While within the sculk, you gain Strength and Speed over time.",
+    "type": "origins:multiple",
+    "phase": {
+        "condition": {
+            "inverted": true,
+            "type": "origins:gamemode",
+            "gamemode": "spectator"
+        },
+        "type": "origins:phasing",
+        "block_condition": {
+            "type": "origins:in_tag",
+            "tag": "deepspawn:sculk_phasable"
+        },
+        "blacklist": false,
+        "render_type": "blindness",
+        "view_distance": 8,
+        "phase_down_condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:sneaking"
+                },
+                {
+                    "type": "origins:on_block"
+                }
+            ]
+        }
+    },
+    "sculkbuffs": {
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:in_block",
+                    "block_condition": {
+                        "type": "origins:in_tag",
+                        "tag": "deepspawn:sculk_phasable"
+                    }
+                }
+            ]
+        },
+        "type": "origins:stacking_status_effect",
+        "min_stacks": 0,
+        "max_stacks": 8,
+        "duration_per_stack": 40,
+        "tick_rate": 20,
+        "effects": [
+            {
+                "effect": "minecraft:strength",
+                "duration": 100,
+                "amplifier": 0,
+                "show_particles": false,
+                "show_icon": true
+            },
+            {
+                "effect": "minecraft:speed",
+                "duration": 100,
+                "amplifier": 0,
+                "show_particles": false,
+                "show_icon": true
+            }
+        ]
+    }
+}

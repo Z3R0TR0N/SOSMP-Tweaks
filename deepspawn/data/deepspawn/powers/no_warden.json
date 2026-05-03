@@ -1,0 +1,32 @@
+{
+	"type":"origins:multiple",
+	"add_mobs":{
+		"type":"origins:action_over_time",
+		"interval":20,
+		
+		"entity_action":{
+			"type": "origins:and",
+			"actions":[
+			{
+			"type":"origins:execute_command",
+			"command":"team add deepspawn"
+		},
+		{
+			"type":"origins:execute_command",
+			"command":"team join deepspawn @s"
+		},
+			{
+			"type":"origins:execute_command",
+			"command":"team join deepspawn @e[type=minecraft:warden]"
+		}
+		]
+	}
+},
+	"power_lost":{
+		"type":"origins:action_on_callback",
+		"entity_action_lost":{
+			"type":"origins:execute_command",
+			"command":"team leave @s"
+		}
+	}
+}

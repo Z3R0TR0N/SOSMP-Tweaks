@@ -1,0 +1,72 @@
+{
+  "name": "Depthborn",
+  "description": "You can see slightly better in the dark, however bright light overwhelms your senses, leaving you weakened and unable to see very far in its presence.\n(You can turn off darkness pulsing in accessibility settings.)",
+  "type": "origins:multiple",
+  "sunweakness": {
+    "type": "origins:self_action_per_tick",
+    "interval": 5,
+    "entity_action": {
+      "type": "origins:if_else",
+      "condition": {
+        "type": "origins:or",
+        "conditions": [
+          {
+            "type": "origins:exposed_to_sun"
+          },
+          {
+            "type": "origins:and",
+            "conditions": [
+              {
+                "type": "origins:brightness",
+                "comparison": ">=",
+                "compare_to": 0.7
+              },
+              {
+                "type": "origins:inverted",
+                "condition": {
+                  "type": "origins:exposed_to_sun"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "if_action": {
+        "type": "origins:and",
+        "actions": [
+          {
+            "type": "origins:apply_effect",
+            "effect": {
+              "effect": "minecraft:weakness",
+              "duration": 100,
+              "amplifier": 0,
+              "show_particles": false,
+              "show_icon": true
+            }
+          },
+          {
+            "type": "origins:apply_effect",
+            "effect": {
+              "effect": "minecraft:darkness",
+              "duration": 100,
+              "amplifier": 0,
+              "show_particles": false,
+              "show_icon": true
+            }
+          }
+        ]
+      },
+      "else_action": {
+        "type": "origins:empty"
+      }
+    }
+  },
+  "nightvision": {
+    "type": "origins:toggle_night_vision",
+    "active_by_default": true,
+    "strength": 0.05,
+    "key": {
+      "key": "key.loadToolbarActivator"
+    }
+  }
+}

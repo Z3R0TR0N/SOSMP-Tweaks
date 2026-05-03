@@ -1,0 +1,37 @@
+{
+    "values": [
+        "minecraft:sculk",
+        "minecraft:sculk_catalyst",
+        "minecraft:sculk_shrieker",
+        "minecraft:sculk_sensor",
+        "minecraft:calibrated_sculk_sensor",
+        {
+            "id": "deeperdarker:sculk_grime",
+            "required": false
+        },
+        {
+            "id": "deeperdarker:blooming_moss_block",
+            "required": false
+        },
+        {
+            "id": "deeperdarker:echo_soil",
+            "required": false
+        },
+        {
+            "id": "deeperdarker:gloomy_sculk",
+            "required": false
+        },
+        {
+            "id": "deeperdarker:gloomy_geyser",
+            "required": false
+        },
+        {
+            "id": "deeperdarker:infested_sculk",
+            "required": false
+        },
+        {
+            "id": "deeperdarker:sculk_jaw",
+            "required": false
+        }
+    ]
+}
