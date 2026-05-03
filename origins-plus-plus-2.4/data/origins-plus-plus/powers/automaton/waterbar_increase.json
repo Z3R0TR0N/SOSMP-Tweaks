@@ -52,14 +52,8 @@
 								"type":"origins:equipped_item",
 								"equipment_slot":"mainhand",
 								"item_condition":{
-									"type":"origins:ingredient",
-									"ingredient":{
-										"item":"minecraft:potion",										
-										"item_condition":{
-											"type":"origins:nbt",
-											"nbt":"{Potion:\"minecraft:water\"}"
-										}
-									}
+									"type":"origins:nbt",
+									"nbt":"{Potion:\"minecraft:water\"}"
 								}
 							}
 						]
